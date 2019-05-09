@@ -16,12 +16,14 @@ const router = express.Router();
 
 
 
-
 //Establecemos la ruta para la GET request de la pagina  "listas"
 //que permite mostrar todas las listas en la base de datos.
 //La solicitud de la pagina  ejecutara la funcion "getListas" 
 //del "listasControlador"
 router.get( '/listas', listasControlador.getListas );
+
+
+
 
 
 

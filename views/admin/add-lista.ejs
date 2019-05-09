@@ -9,11 +9,29 @@
     <main>
         <form class="product-form" action="/admin/add-lista" method="POST">
             <div class="form-control">
-                <label for="title">Title</label>
-                <input type="text" name="title" id="title">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
             </div>
-
-            <button class="btn" type="submit">Add Lista</button>
+            <div class="form-control">
+                <label for="nombre">Lugar</label>
+                <input type="text" name="lugar" id="lugar">
+            </div>
+            <div class="form-control">
+                <label for="fecha">Fecha</label>
+                <input type="text" name="fecha" id="fecha">
+            </div>
+            <div class="form-control">
+                <label for="estado">Estado</label>
+                <input type="text" name="estado" id="estado">
+            </div>
+            <div class="form-control">
+                <label for="imagenUrl">Imagen URL</label>
+                <input type="text" name="imagenUrl" id="imagenUrl">
+            </div>
+    
+            <button class="btn" type="submit">Agregar Lista</button>
         </form>
     </main>
 <%- include('../includes/end.ejs') %>
+
+

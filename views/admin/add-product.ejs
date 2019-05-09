@@ -9,11 +9,27 @@
     <main>
         <form class="product-form" action="/admin/add-product" method="POST">
             <div class="form-control">
-                <label for="title">Title</label>
-                <input type="text" name="title" id="title">
-            </div>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+                </div>
+                <div class="form-control">
+                    <label for="precio">Precio</label>
+                    <input type="text" name="precio" id="precio">
+                </div>
+                <div class="form-control">
+                        <label for="cantidad">Cantidad</label>
+                        <input type="text" name="cantidad" id="cantidad">
+                    </div>
+                <div class="form-control">
+                    <label for="imagenUrl">Imagen URL</label>
+                    <input type="text" name="imagenUrl" id="imagenUrl">
+                </div>
+                <div class="form-control">
+                    <label for="descripcion">Descripción</label>
+                    <textarea name="descripcion" id="descripcion" rows="6"></textarea>
+                </div>
 
-            <button class="btn" type="submit">Add Product</button>
+            <button class="btn" type="submit">Agregar Producto</button>
         </form>
     </main>
 <%- include('../includes/end.ejs') %>

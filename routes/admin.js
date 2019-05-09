@@ -33,8 +33,6 @@ router.post( '/add-product', productosControlador.postAddProduct );
 
 
 
-
-
 //Establecemos la ruta para la GET request de la pagina  "add-lista"
 //que contiene los campos requeridos para agregar un producto.
 //La solicitud de la pagina  ejecutara la funcion "getAddLista" 
@@ -49,8 +47,25 @@ router.get( '/add-lista', listaControlador.getAddLista );
 router.post( '/add-lista', listaControlador.postAddLista );
 
 
-// /admin/productos => GET
-router.get('/productos', );
+//Establecemos la ruta para la GET request de la pagina  "admin/listarProductos"
+//que permite mostrar todas los productos en la base de datos al administrador.
+//La solicitud de la pagina  ejecutara la funcion "getProducts" 
+//del "productosControlador"
+router.get( '/listarProductos', productosControlador.getListarProductos );
+
+//Establecemos la ruta para la GET request de la pagina  "/productos"
+//que permite mostrar todas los productos en la base de datos.
+//La solicitud de la pagina  ejecutara la funcion "getProducts" 
+//del "productosControlador"
+//   /productos => GET
+router.get('/productos', productosControlador.getProducts );
+
+
+//Establecemos la ruta para la GET request de la pagina  "admin/mostrarListas"
+//que permite mostrar todas los productos en la base de datos al administrador.
+//La solicitud de la pagina  ejecutara la funcion "getMostrarLista" 
+//del "listasControlador"
+router.get( '/mostrarListas', listaControlador.getMostrarListas  );
 
 
 
