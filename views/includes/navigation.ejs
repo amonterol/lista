@@ -1,0 +1,36 @@
+<header class="main-header">
+    <nav class="main-header__nav">
+        <ul class="main-header__item-list">
+
+            <!-- Shop Area -->
+            <li class="main-header__item">
+                <a class="<%= path === '/' ? 'active' : '' %>" href="/">Shop</a>
+            </li>
+            <li class="main-header__item">
+                <a class="<%= path === '/productos' ? 'active' : '' %>" href="/productos">Productos</a>
+            </li>
+            <li class="main-header__item">
+                    <a class="<%= path === '/listas/listas' ? 'active' : '' %>" href="/listas/listas">Listas</a>
+                </li>
+            <li class="main-header__item">
+                <a class="<%= path === '/cart' ? 'active' : '' %>" href="/cart">Cart</a>
+            </li>
+
+            <!-- Admin Area -->
+            <li class="main-header__item">
+                <a class="<%= path === '/admin/add-product' ? 'active' : '' %>" href="/admin/add-product">Add Product</a>
+            </li>
+            
+            <li class="main-header__item">
+                <a class="<%= path === '/admin/productos' ? 'active' : '' %>" href="/admin/productos">Admin Productos</a>
+            </li>
+            <li class="main-header__item">
+                <a class="<%= path === '/admin/add-lista' ? 'active' : '' %>" href="/admin/add-lista">Add Lista</a>
+            </li>
+            <li class="main-header__item">
+                <a class="<%= path === '/admin/listas' ? 'active' : '' %>" href="/admin/listas">Admin  Listas</a>
+            </li>
+            
+        </ul>
+    </nav>
+</header>
